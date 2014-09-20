@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/createTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/createTaskName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/createTaskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createTaskName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createTaskName"
+        android:ems="10"
+        android:hint="@string/createTaskDescription"
+        android:inputType="textMultiLine" />
+    
+    <EditText
+        android:id="@+id/createTaskNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createTaskDescription"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createTaskDescription"
+        android:ems="10"
+        android:hint="@string/createTaskNotes"
+        android:inputType="textMultiLine" />
+    
+    <Spinner
+        android:id="@+id/spinnerUser"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/createTaskNotes"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createTaskNotes"
+         />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerUser"
+        android:layout_alignRight="@+id/spinnerUser"
+        android:layout_below="@+id/spinnerUser"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/createTaskDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/createProjectDueDate" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/createTaskTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/createProjectDueTime" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayoutTask"
+        android:layout_alignRight="@+id/linearLayoutTask"
+        android:layout_below="@+id/linearLayoutTask"
+        android:text="@string/createTaskButton" />
+
+</RelativeLayout>

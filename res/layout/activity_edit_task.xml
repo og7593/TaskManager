@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".EditTaskActivity" >
+
+        <EditText
+            android:id="@+id/editTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/editTaskName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTaskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTaskName"
+            android:layout_alignRight="@+id/editTaskName"
+            android:layout_below="@+id/editTaskName"
+            android:ems="10"
+            android:hint="@string/editTaskDescription" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTaskNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTaskDescription"
+            android:layout_alignRight="@+id/editTaskDescription"
+            android:layout_below="@+id/editTaskDescription"
+            android:ems="10"
+            android:hint="@string/editTaskNotes" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/editTaskSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/editTaskNotes"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTaskNotes" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/editTaskSpinner"
+            android:layout_below="@+id/editTaskSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="bottom"
+            android:text="@string/status"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width ="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/editTaskSpinner"
+            android:layout_below="@+id/status"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/darker_gray" />
+
+        <RadioGroup
+            android:id="@+id/editTaskStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/editTaskName"
+            android:layout_below="@+id/lineView"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/taskNotStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="14sp"
+                android:text="@string/notStarted" />
+
+            <RadioButton
+                android:id="@+id/taskInProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/inProgress" />
+
+            <RadioButton
+                android:id="@+id/taskCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/completed" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTaskStatus"
+            android:layout_alignRight="@+id/editTaskStatus"
+            android:layout_below="@+id/editTaskStatus"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/editTaskDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="editDate"
+                android:text="@string/createProjectDueDate" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/editTaskTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="editTime"
+                android:text="@string/createProjectDueTime" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/editTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutTask"
+            android:layout_alignRight="@+id/linearLayoutTask"
+            android:layout_below="@+id/linearLayoutTask"
+            android:onClick="updateTask"
+            android:text="@string/updateTaskButton" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<!-- </android.support.v4.view.ViewPager> -->
+
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeScreen" >
+
+    <Button
+        android:id="@+id/createProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userSetting"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/userSetting"
+        android:layout_marginTop="90dp"
+        android:onClick="createNewProject"
+        android:text="@string/createProject" />
+
+    <Button
+        android:id="@+id/myProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createProject"
+        android:layout_alignRight="@+id/createProject"
+        android:layout_below="@+id/createProject"
+        android:layout_marginTop="13dp"
+        android:onClick="viewMyProjects"
+        android:text="@string/myProjects" />
+
+    <Button
+        android:id="@+id/userSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myProjects"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:onClick="openAccountPreferences"
+        android:text="@string/userSettingsButton" />
+
+    <Button
+        android:id="@+id/joinProjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userSetting"
+        android:layout_alignRight="@+id/userSetting"
+        android:layout_below="@+id/userSetting"
+        android:layout_marginTop="14dp"
+        android:onClick="joinProject"
+        android:text="@string/joinProject" />
+
+</RelativeLayout>
+-->

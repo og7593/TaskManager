@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/createProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/createProjectName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/createNewProjectDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createProjectPassword"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createProjectPassword"
+        android:ems="10"
+        android:hint="@string/createProjectDescription"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createNewProjectDescription"
+        android:layout_alignRight="@+id/createNewProjectDescription"
+        android:layout_below="@+id/createNewProjectDescription"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/createProjectDueDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/createProjectDueDate" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/createNewProjectTimeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/createProjectDueTime" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createProjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:text="@string/createProjectButton" />
+
+    <EditText
+        android:id="@+id/createProjectPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createProjectUIDText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createProjectUIDText"
+        android:ems="10"
+        android:hint="@string/createProjectPassword"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/createProjectUIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createProjectName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createProjectName"
+        android:ems="10"
+        android:hint="@string/createProjectUID" />
+
+</RelativeLayout>

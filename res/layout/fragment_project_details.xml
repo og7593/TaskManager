@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/projectDetailsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/projectDetailsBorder1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDetailsName"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/projectDetailsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectDetailsBorder1"
+        android:text="Description: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/projectDetailsBorder2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDetailsDescription"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView 
+        android:id="@+id/projectDueDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectDetailsBorder2"
+        android:layout_below="@+id/projectDetailsBorder2"
+        android:text="Due on "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+    <View
+        android:id="@+id/projectDetailsBorder3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDueDateTime"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/projectDetailsUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectDetailsBorder3"
+        android:layout_below="@+id/projectDetailsBorder3"
+        android:text="UID: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/projectDetailsBorder4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDetailsUID"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/projectDetailsAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectDetailsBorder4"
+        android:layout_below="@+id/projectDetailsBorder4"
+        android:text="Administrator: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/projectDetailsBorder5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDetailsAdmin"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/projectDetailsUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectDetailsBorder5"
+        android:layout_below="@+id/projectDetailsBorder5"
+        android:text="Users: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/projectDetailsBorder6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/projectDetailsUsers"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/projectDetailsTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectDetailsBorder6"
+        android:layout_below="@+id/projectDetailsBorder6"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Tasks:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ProgressBar
+        android:id="@+id/projectDetailsProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

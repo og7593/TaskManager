@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateAccountActivity" >
+
+    <EditText
+        android:id="@+id/accountCreateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accountCreateName"
+        android:layout_alignRight="@+id/accountCreateName"
+        android:layout_below="@+id/accountCreateName"
+        android:ems="10"
+        android:hint="@string/accountCreateEmail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/accountCreatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accountCreateEmail"
+        android:layout_alignRight="@+id/accountCreateEmail"
+        android:layout_below="@+id/accountCreateEmail"
+        android:ems="10"
+        android:hint="@string/accountCreatePassword"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/createNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accountCreatePassword"
+        android:layout_alignRight="@+id/accountCreatePassword"
+        android:layout_below="@+id/accountCreatePassword"
+        android:onClick="createNewAccount"
+        android:text="@string/createNewAccount" />
+
+    <EditText
+        android:id="@+id/accountCreateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/accoutCreateName"
+        android:inputType="textPersonName"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

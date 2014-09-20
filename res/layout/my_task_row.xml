@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="6dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp" />
+        
+        <TextView 
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="6dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp" />
+        
+         <TextView 
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_marginLeft="6dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTaskButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/darker_gray" />
+
+        <ImageButton
+            android:id="@+id/editTaskButton"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/editTaskButton"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_action_edit" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
